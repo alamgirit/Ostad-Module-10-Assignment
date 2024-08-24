@@ -27,7 +27,6 @@ class Book {
         }
     }
 
-    // Method to return a book
     public function returnBook() {
         $this->availableCopies++;
     }
