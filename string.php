@@ -8,7 +8,7 @@ foreach ($strings as $string) {
     
     $reversed_string = strrev($string);
     
-    echo "Original String: $string, Vowel Count: $vowel_count, Reversed String: $reversed_string <br>";
+    echo "Original String: $string, Vowel Count: $vowel_count, Reversed String: $reversed_string <br><br>";
 }
 
 ?>
