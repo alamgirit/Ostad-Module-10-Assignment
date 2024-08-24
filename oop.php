@@ -36,7 +36,6 @@ class Member {
 
     private $name;
 
-
     public function __construct($name) {
         $this->name = $name;
     }
@@ -47,9 +46,9 @@ class Member {
 
     public function borrowBook(Book $book) {
         if ($book->borrowBook()) {
-            echo $this->name . " borrowed '" . $book->getTitle() . "'.<br>";
+            echo $this->name . " borrowed '" . $book->getTitle() . "'.<br><br>";
         } else {
-            echo "Sorry, no available copies of '" . $book->getTitle() . "' for " . $this->name . " to borrow.\n";
+            echo "Sorry, no available copies of '" . $book->getTitle() . "' for " . $this->name . " to borrow.<br>";
         }
     }
 
@@ -68,7 +67,7 @@ $member2 = new Member("Jane Smith");
 $member1->borrowBook($book1); 
 $member2->borrowBook($book2); 
 
-echo "Available Copies of '" . $book1->getTitle() . "': " . $book1->getAvailableCopies() . "<br>";
+echo "Available Copies of '" . $book1->getTitle() . "': " . $book1->getAvailableCopies() . "<br><br>";
 echo "Available Copies of '" . $book2->getTitle() . "': " . $book2->getAvailableCopies() . "<br>";
 
 ?>
